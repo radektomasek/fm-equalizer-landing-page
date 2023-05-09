@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    * {
+        @apply box-border;
+    }
+
+    body {
+        @apply bg-small bg-no-repeat bg-left-bottom md:bg-medium md:bg-center lg:bg-large lg:bg-top;
+    }
+
+
+}
