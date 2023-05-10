@@ -20,6 +20,11 @@ module.exports = {
       fontFamily: {
         plex: ['IBM Plex Sans', 'sans-serif'],
       },
+      letterSpacing: {
+        tightest: '-0.0625rem',
+        tighter: '-0.045625rem',
+        tight: '-0.028125rem',
+      },
       backgroundImage: {
         'small': "url('../../assets/bg-main-mobile.png')",
         'medium': "url('../../assets/bg-main-tablet.png')",

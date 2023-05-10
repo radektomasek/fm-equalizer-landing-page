@@ -8,8 +8,26 @@
     }
 
     body {
-        @apply bg-small bg-no-repeat bg-left-bottom md:bg-medium md:bg-center lg:bg-large lg:bg-top;
+        @apply font-plex bg-small bg-no-repeat bg-left-bottom md:bg-medium md:bg-center lg:bg-large lg:bg-top;
     }
 
+    h1 {
+        @apply font-bold text-darkBlue text-[2.5rem] leading-[3rem] tracking-tight md:text-[4rem] md:leading-[4rem] md:tracking-tighter lg:tracking-tightest lg:text-[5.5rem] lg:leading-[5.5rem];
+    }
 
+    h2 {
+        @apply font-bold text-lightGray text-[2rem] leading-[2.5rem] lg:text-[2.5rem] lg:leading-[3.25rem];
+    }
+
+    p {
+        @apply font-normal text-darkBlue;
+    }
+}
+
+.text-body-1 {
+    @apply lg:text-xl lg:leading-[2.125rem] ;
+}
+
+.text-body-2 {
+    @apply lg:text-base lg:leading-[1.625rem];
 }
