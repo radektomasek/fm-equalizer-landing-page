@@ -29,6 +29,8 @@ module.exports = {
         'small': "url('../../assets/bg-main-mobile.png')",
         'medium': "url('../../assets/bg-main-tablet.png')",
         'large': "url('../../assets/bg-main-desktop.png')",
+        'patternOne': "url('../../assets/bg-pattern-1.svg')",
+        'patternTwo': "url('../../assets/bg-pattern-2.svg')",
       },
     },
   },

@@ -22,6 +22,10 @@
     p {
         @apply font-normal text-darkBlue;
     }
+
+    button {
+        @apply font-bold text-lg tracking-[-0.01125rem] leading-8;
+    }
 }
 
 .text-body-1 {
@@ -30,4 +34,52 @@
 
 .text-body-2 {
     @apply lg:text-base lg:leading-[1.625rem];
+}
+
+.ios-button {
+    @apply inline-flex items-center justify-center bg-darkBlue text-lightGray rounded-xl  w-[296px] h-[61px];
+}
+
+.android-button {
+    @apply inline-flex items-center justify-center bg-lightGray text-darkBlue rounded-xl w-[296px] h-[61px];
+}
+
+.ios-button img, .android-button img {
+    @apply mr-2;
+}
+
+.ios-button span {
+    @apply pt-1;
+}
+
+.header {
+    @apply ml-6 mt-10;
+}
+
+.intro {
+    @apply mx-6 mt-16 mb-40;
+}
+
+.intro__content {
+    @apply mt-5;
+} 
+
+.purchase {
+    @apply bg-darkBlue bg-patternTwo bg-no-repeat bg-center relative h-[600px];
+}
+
+.purchase__content {
+    @apply absolute bg-lightRed top-96 h-[546px];
+}
+
+.purchase__illustration {
+    @apply absolute w-52 left-1/2 -top-24 transform -translate-x-1/2;
+}
+
+.purchase__cta {
+    @apply flex flex-col justify-between h-36 ml-11;
+}
+
+.footer {
+    @apply mt-96;
 }

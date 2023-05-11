@@ -13,29 +13,44 @@
 </head>
 <body>
     <main>
-        <header class="logo">
-            <img src="./assets/logo.svg" alt="equalizer logo">
+        <header class="header">
+            <div class="header__logo">
+                <img src="./assets/logo.svg" alt="equalizer logo">
+            </div>
         </header>
         <section class="intro">
-            <h1>We make your music sound extraordinary.</h1>
-            <p>
+            <h1 class="intro__heading">We make your music sound extraordinary.</h1>
+            <p class="intro__content">
                 A system audio equalizer specifically designed for Android and iOS. Freely tune the 
                 way your music sounds with a professional grade parametric EQ & volume mixer. Control 
                 bass, mids, treble, gain control, reverb, and more!
             </p>
         </section>
         <section class="purchase">
-            <h2>Premium EQ</h2>
-            <p>
-                Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
-                your listening experience to a whole new level and access all our incredible features!
-            </p>
-            <p><strong>$4</strong> / month</p>
-            <button>iOS Download</button>
-            <button>Android Download</button>
+            <div class="purchase__content">
+                <h2>Premium EQ</h2>
+                <p>
+                    Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
+                    your listening experience to a whole new level and access all our incredible features!
+                </p>
+                <p><strong>$4</strong> / month</p>
+                <div class="purchase__cta">
+                    <button class="purchase__ios-button ios-button">
+                        <img src="./assets/icon-apple.svg" alt="iOS Download">
+                        <span>iOS Download</span>
+                    </button>
+                    <button class="purchase__android-button android-button">
+                        <img src="./assets/icon-android.svg" alt="Android Download">
+                        <span>Android Download</span>
+                    </button>
+                </div>
+            </div>
+            <aside class="purchase__illustration">
+                <img src="./assets/illustration-app.png" alt="Illustration App" />
+            </aside>
         </section>
-        <footer>
-            <div class="logo">
+        <footer class="footer">
+            <div class="footer__logo">
                 <img src="./assets/logo.svg" alt="equalizer logo">
             </div>
             <p>All rights reserved © Equalizer 2021</p>
