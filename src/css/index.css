@@ -11,6 +11,7 @@
         @apply font-plex bg-small bg-no-repeat bg-left-bottom md:bg-medium md:bg-center lg:bg-large lg:bg-top;
     }
 
+
     h1 {
         @apply font-bold text-darkBlue text-[2.5rem] leading-[3rem] tracking-tight md:text-[4rem] md:leading-[4rem] md:tracking-tighter lg:tracking-tightest lg:text-[5.5rem] lg:leading-[5.5rem];
     }
@@ -23,13 +24,17 @@
         @apply font-normal text-darkBlue;
     }
 
+    a {
+        @apply font-bold;
+    }
+
     button {
         @apply font-bold text-lg tracking-[-0.01125rem] leading-8;
     }
 }
 
 .text-body-1 {
-    @apply lg:text-xl lg:leading-[2.125rem] ;
+    @apply lg:text-xl lg:leading-[2.125rem];
 }
 
 .text-body-2 {
@@ -53,27 +58,55 @@
 }
 
 .header {
-    @apply ml-6 mt-10;
+    @apply relative ml-6 mt-10 md:w-[43.5rem] md:mx-auto;
+}
+
+.header__illustration {
+    @apply absolute -right-28 -top-20 overflow-x-hidden; 
 }
 
 .intro {
-    @apply mx-6 mt-16 mb-40;
+    @apply mx-6 mt-16 mb-40 md:w-[43.5rem] md:mx-auto md:mb-52;
+}
+
+.intro__heading {
+    @apply md:max-w-[32.5rem];
 }
 
 .intro__content {
-    @apply mt-5;
+    @apply mt-5 md:max-w-[32.5rem];
 } 
 
 .purchase {
-    @apply bg-darkBlue bg-patternTwo bg-no-repeat bg-center relative h-[600px];
+    @apply bg-darkBlue bg-patternTwo bg-no-repeat bg-center relative h-[600px] md:w-[43.5rem] md:mx-auto md:bg-[center_bottom_10rem];
 }
 
 .purchase__content {
-    @apply absolute bg-lightRed top-96 h-[546px];
+    @apply absolute z-10 bg-lightRed top-96 h-[546px] w-[23.4375rem] md:w-[24.9375rem] lg:w-[27.875rem] md:right-14 md:top-40;
 }
 
 .purchase__illustration {
-    @apply absolute w-52 left-1/2 -top-24 transform -translate-x-1/2;
+    @apply absolute w-52 left-1/2 -top-24 transform -translate-x-1/2 md:w-[16.875rem] md:left-48 md:-top-32;
+}
+
+.purchase__heading {
+    @apply mx-9 mt-12 mb-3; 
+}
+
+.purchase__description {
+    @apply text-white mx-9;
+}
+
+.purchase__price {
+    @apply text-white ml-[2.625rem] mr-9 mt-4 mb-4 relative;
+}
+
+.purchase__price strong {
+    @apply text-[4.0625rem];
+}
+
+.purchase__price span {
+    @apply absolute top-1/2 -translate-y-1/2 left-24 text-xl leading-8 tracking-[-0.0125rem];
 }
 
 .purchase__cta {
@@ -81,5 +114,17 @@
 }
 
 .footer {
-    @apply mt-96;
+    @apply mt-96 md:mt-40;
+}
+
+.footer__logo {
+    @apply mx-6 mb-8;
+}
+
+.footer__paragraph {
+    @apply mx-6;
+}
+
+.footer__social {
+    @apply inline-flex mx-6 mt-16 mb-20 w-24 justify-between;
 }
