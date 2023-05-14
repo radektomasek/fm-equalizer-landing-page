@@ -43,7 +43,7 @@ This is the **desktop version** as displayed on a large screen (split into two i
 ### Links
 
 - Solution URL: [https://github.com/radektomasek/fm-equalizer-landing-page](https://github.com/radektomasek/fm-equalizer-landing-page)
-- Live Site URL: [https://radektomasek.github.io/single-price-grid-component](https://radektomasek.github.io/equalizer-landing-page)
+- Live Site URL: [https://radektomasek.github.io/equalizer-landing-page](https://radektomasek.github.io/equalizer-landing-page)
 
 ## My process
 
